@@ -1,0 +1,6 @@
+@mixin focus-outline {
+    outline-color: rgb(0, 165, 219);
+    outline-offset: 3px;
+    outline-style: solid;
+    outline-width: 2px;
+}

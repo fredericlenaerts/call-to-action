@@ -1,0 +1,59 @@
+@use '../../styles/mixins/interactive';
+
+.base {
+  padding: 14px 22px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  text-decoration: none;
+  border-radius: 4px;
+
+  &:focus-within {
+    @include interactive.focus-outline;
+  }
+}
+
+.small {
+  padding: 12px 16px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.primary {
+  color: white;
+  background-color: rgb(205, 4, 0);
+  box-shadow: rgb(0, 0, 0) 2px 2px 0px 0px;
+  border: solid 2px rgb(205, 4, 0);
+
+  &:disabled {
+    color: orange;
+  }
+}
+
+.primary-icon {
+  color: black;
+}
+
+.secondary {
+  color: white;
+  background-color: rgb(44, 44, 44);
+}
+
+.secondary-icon {
+  color: rgb(205, 4, 0);
+}
+
+.loading {
+  color: rgb(121, 121, 121);
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,12 @@
+.root {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    gap: 1.25em;
+    border: none;
+
+    &:disabled {
+        opacity: .4;
+    }
+}
